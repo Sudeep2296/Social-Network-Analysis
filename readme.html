@@ -1,44 +1,41 @@
-<html>
-<link rel="stylesheet" media="screen" href="http://networkrepository.com/assets/css/bootstrap.css">
-<link rel="stylesheet" href="http://networkrepository.com/assets/css/responsive.css">   
-<link rel="stylesheet" href="http://networkrepository.com/assets/css/style.css">
+# Social Network Analysis – Research Collaboration Network
 
-<body>
-<br><br>
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="panel panel-success">
-    <div class="panel-heading">
-        <h3 class="panel-title"><i class="icon-group icon-large"></i> Acknowledgement policy</h3>
-    </div>
-    <div class="panel-body">
-        <h4>Please acknowledge the <a href="http://networkrepository.com" target="_blank">repository</a> in published materials</h4> 
-        <p class="lead12">                    
-            If you publish material based on data obtained from this <a href="http://networkrepository.com" target="_blank">repository</a>, then, in your acknowledgements, please note the assistance you received by using <a href="http://networkrepository.com" target="_blank">network repository</a>. 
-            <BR><BR>
-            Please use the following <code>BiBTeX</code> reference:<BR>
+## 1. Project Overview
 
-            <blockquote class="hero">
-            <p style="font-family:'Lato';">
-            <code style="font-size:1.1em;">
-                        &nbsp; @inproceedings{nr-aaai15,<BR>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    title = {The Network Data Repository with Interactive Graph Analytics and Visualization},<BR>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    author={Ryan A. Rossi and Nesreen K. Ahmed},<BR>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    booktitle = {Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence},<BR>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    url={<i><a href="http://networkrepository.com" target="_blank"><b style="font-weight:bold !important;">http://networkrepository.com</b></a></i>},<BR>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    year={2015}<BR>
-                        &nbsp; }<BR>
-            </code>
-            </p>
-            </blockquote>
-            Many of the datasets have additional citation requests; these can be found on each dataset page.
-            See the <a href="http://networkrepository.com/policy.php" target="_blank">data license and policy</a> for more information.
-        </p>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+This project analyzes a **Research Collaboration Network** using Social Network Analysis (SNA) techniques.
+
+Researchers are represented as **nodes**, while collaborations between researchers are represented as **edges**. The project applies three important network centrality measures:
+
+- **Degree Centrality** – identifies researchers with the most direct connections.
+- **Closeness Centrality** – identifies researchers who are relatively close to other researchers in the network.
+- **Betweenness Centrality** – identifies researchers who act as bridges or intermediaries between different parts of the network.
+
+The analysis was implemented using **Python and NetworkX**, with Pandas, NumPy, and Matplotlib used for data processing and visualization.
+
+---
+
+## 2. Objectives
+
+The main objectives of this project are:
+
+1. To construct a research collaboration network from the given dataset.
+2. To preprocess and clean the collaboration data.
+3. To calculate Degree Centrality for each researcher.
+4. To calculate Closeness Centrality for each researcher.
+5. To calculate Betweenness Centrality for each researcher.
+6. To identify highly influential and well-connected researchers.
+7. To visualize the structure and centrality characteristics of the network.
+8. To compare different centrality measures and interpret their significance.
+
+---
+
+## 3. Dataset
+
+### Dataset Name
+
+**CA-AstroPh – Collaboration Network**
+
+### Dataset File
+
+```text
+ca-netscience.mtx
